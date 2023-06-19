@@ -12,9 +12,14 @@
 
   ?>
 
-  <h2> <?php the_title() ?> </h2>
+<div>
 
-  <p> <?php the_content() ?> </p>
+  <?php the_title() ?>
+
+ <?php the_content() ?> 
+
+
+</div>
 
 
 <?php  } ?>

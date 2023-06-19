@@ -15,3 +15,12 @@ add_theme_support('custom-header');
 
 ?>
 
+<?php 
+
+function enqueue_gutenberg_styles() {
+    wp_enqueue_style( 'gutenberg', get_stylesheet_directory_uri() . 'D:/xampp/htdocs/wordpress/wp-content/plugins/code-snippets/dist/edit.css' );
+}
+add_action( 'wp_enqueue_scripts', 'enqueue_gutenberg_styles' );
+
+
+?>
