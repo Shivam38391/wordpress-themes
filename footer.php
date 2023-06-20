@@ -1,4 +1,10 @@
         
+        <?php wp_footer( ) ?>
+
+
+
+
+
       <!-- contact section start -->
       <div class="contact_section layout_padding">
         <div class="container">

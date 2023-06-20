@@ -35,7 +35,7 @@
       <?php wp_head(); ?>
 
     </head>
-    <body>
+    <body <?php body_class(); ?> >
       <!-- header top section start -->
       <div class="header_top">
         <div class="container">

@@ -13,16 +13,24 @@
 
   ?>
 
-<div>
 
-<!-- // the title function get the title of the post  -->
+<article <?php post_class(); ?> >
 
- <!-- <h1> <?php // the_title() ?> </h1>  -->
+  <!-- // the title function get the title of the post  -->
 
- <?php the_content() ?> 
+  <h1> <?php the_title() ?> </h1> 
+
+  <?php the_content() ?> 
+
+  <footer>
+    <p class="byline">
+      Author: <a href="<?php echo  get_author_posts_url( $post->post_author ); ?>"> <?php  the_author(); ?></a> | Date: <?php the_date(); ?>| Time: <?php the_time(); ?> | Categories: <?php the_category( ',' ); ?> | Tags: <?php the_tag( ',' ); ?> 
+    </p>
+  
+  </footer>
 
 
-</div>
+ </article>
 
 
 <?php  } ?>
