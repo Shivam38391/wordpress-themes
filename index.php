@@ -2,6 +2,7 @@
 
 
 
+<?php get_sidebar( ) ?>
 
 <?php  
 
@@ -24,7 +25,7 @@
 
   <footer>
     <p class="byline">
-      Author: <a href="<?php echo  get_author_posts_url( $post->post_author ); ?>"> <?php  the_author(); ?></a> | Date: <?php the_date(); ?>| Time: <?php the_time(); ?> | Categories: <?php the_category( ',' ); ?> | Tags: <?php the_tag( ',' ); ?> 
+      Author: <a href="<?php echo  get_author_posts_url( $post->post_author ); ?>"> <?php  the_author(); ?></a> | Date: <?php the_date(); ?>| Time: <?php the_time(); ?> | Categories: <?php the_category( ',' ); ?>
     </p>
   
   </footer>
